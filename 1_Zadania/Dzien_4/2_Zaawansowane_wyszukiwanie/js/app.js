@@ -2,9 +2,10 @@ $(function() {
     // ---------------- zadanie 1 --------------------
     var spanTask1 = $("[data-task='_task1']");
     console.log(spanTask1);
-    console.log(spanTask1.siblings("p"));
-    console.log(spanTask1.closest("section"));
-    console.log(spanTask1.next());
+    // console.log(spanTask1.siblings("p"));
+    // console.log(spanTask1.closest("section"));
+    // console.log(spanTask1.next());
+    console.log(spanTask1.siblings("p").eq(1).closest("section").next());
     
     var containers = $(".container");
     containers.each(function(index, element) {
